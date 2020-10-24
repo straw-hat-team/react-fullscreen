@@ -1,0 +1,9 @@
+{
+  "extends": "./node_modules/@straw-hat/tsconfig/lib/base",
+  "compilerOptions": {
+    "module": "ES6",
+    "target": "ES6",
+    "outDir": "dist"
+  },
+  "include": ["src", "tests"]
+}
