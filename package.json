@@ -1,13 +1,16 @@
 {
-  "name": "@straw-hat/CHANGE_ME_PACKAGE_NAME",
-  "version": "0.0.1",
-  "description": "CHANGE_ME_DESCRIPTION",
+  "name": "@straw-hat/react-fullscreen",
+  "version": "2.0.0",
+  "description": "React hook for interacting with the browser fullscreen API",
   "repository": {
     "type": "git",
-    "url": "https://github.com/straw-hat-team/CHANGE_ME_REPO_NAME.git"
+    "url": "https://github.com/straw-hat-team/react-fullscreen.git"
   },
   "license": "MIT",
   "keywords": [
+    "fullscreen",
+    "react",
+    "ui",
     "straw-hat-team"
   ],
   "publishConfig": {
@@ -16,23 +19,28 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "tsc -p tsconfig.prod.json",
-    "test": "jest",
     "prepublishOnly": "yarn build"
   },
-  "type": "commonjs",
+  "type": "module",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist",
     "README.md"
   ],
+  "peerDependencies": {
+    "react": "^16.8.6"
+  },
+  "dependencies": {
+    "fscreen": "^1.0.2"
+  },
   "devDependencies": {
-    "@straw-hat/tsconfig": "^2.1.0",
     "@straw-hat/prettier-config": "^1.1.0",
-    "@types/jest": "^26.0.14",
-    "jest": "^26.5.0",
+    "@straw-hat/tsconfig": "^2.1.0",
+    "@types/fscreen": "^1.0.1",
+    "@types/react": "^16.9.53",
+    "react": "^16.8.6",
     "rimraf": "^3.0.2",
-    "ts-jest": "^26.4.1",
     "typescript": "^4.0.3"
   }
 }
