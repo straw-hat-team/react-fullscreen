@@ -1,6 +1,6 @@
 {
   "name": "@straw-hat/react-fullscreen",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "React hook for interacting with the browser fullscreen API",
   "repository": {
     "type": "git",
@@ -21,7 +21,7 @@
     "build": "tsc -p tsconfig.prod.json",
     "prepublishOnly": "yarn build"
   },
-  "type": "module",
+  "type": "commonjs",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
